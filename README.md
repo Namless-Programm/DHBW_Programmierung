@@ -9,3 +9,4 @@
 ## Mitschriebe
 
 - [Vorlesung 1, 27.01](transcripts/lecture01.md)
+- [Vorlesung 2, 03.02](transcripts/lecture02.md)
