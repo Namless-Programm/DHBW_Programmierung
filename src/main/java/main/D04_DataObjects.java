@@ -36,7 +36,20 @@ public class D04_DataObjects {
 		/* Unveränderliche Datenobjekte */
 		final String text = "Java";
 //		text = "Phyton";
+		
+		/* Sichtbarkeit von Datenobjekten*/
+//		i = 8;
+//		x = 7;
+		System.out.println(PI);
+		
 
+	}
+	
+	public static void doSomething(int x) {
+		int i = 5;
+		x = 7;
+		System.out.println(i);
+		System.out.println(PI);
 	}
 
 }
