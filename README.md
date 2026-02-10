@@ -11,3 +11,4 @@
 - [Vorlesung 1, 27.01](transcripts/lecture01.md)
 - [Vorlesung 2, 03.02](transcripts/lecture02.md)
 - [Vorlesung 3, 05.02](transcripts/lecture03.md)
+- [Vorlesung 4, 10.02](transcripts/lecture04.md)
