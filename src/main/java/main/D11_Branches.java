@@ -31,7 +31,11 @@ public class D11_Branches {
 		
 		/* Vergleichs operatoren: >, >=, <, <=, ==, != */
 		/* Logische Operatoren: && (logisches und), || (logiscche oder), ! (logische Verneinung) */
-
+		char gender = scanner.next().charAt(0);
+		if(gender == 'w' && ++age >= 18) {
+			System.out.println("True");
+		}
+		System.out.println(age);
 	}
 
 }
