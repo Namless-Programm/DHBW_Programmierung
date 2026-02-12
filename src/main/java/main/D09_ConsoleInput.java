@@ -6,6 +6,7 @@ import java.util.Scanner;
  * Console Inputs
  */
 public class D09_ConsoleInput {
+	@SuppressWarnings("resource")
 	public static void main(String[] args) {
 		/* Scanner Initialisieren */
 		Scanner scanner = new Scanner(System.in);

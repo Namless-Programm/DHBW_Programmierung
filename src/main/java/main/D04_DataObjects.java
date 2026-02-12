@@ -9,6 +9,7 @@ public class D04_DataObjects {
 	/* Konstanten */
 	public final static double PI = 3.14159265359;
 
+	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 		/* Deklaration */
 		int age;

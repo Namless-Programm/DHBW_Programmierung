@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class D14_Cases {
 
+	@SuppressWarnings("resource")
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 

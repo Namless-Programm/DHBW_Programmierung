@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class D12_StringComparisons {
 
+	@SuppressWarnings("resource")
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("Bitte die Zeichenkette \"true\" eingeben: ");

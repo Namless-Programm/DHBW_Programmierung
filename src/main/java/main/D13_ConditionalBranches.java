@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class D13_ConditionalBranches {
 
+	@SuppressWarnings("resource")
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("Bitte dein alter eingeben: ");
