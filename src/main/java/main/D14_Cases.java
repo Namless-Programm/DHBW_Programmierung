@@ -49,6 +49,8 @@ public class D14_Cases {
 		default ->  null;
 		};
 		System.out.println(colorText);
+		
+		
 	}
 
 }

@@ -12,3 +12,4 @@
 - [Vorlesung 2, 03.02](transcripts/lecture02.md)
 - [Vorlesung 3, 05.02](transcripts/lecture03.md)
 - [Vorlesung 4, 10.02](transcripts/lecture04.md)
+- [Vorlesung 5, 12.02](transcripts/lecture05.md)

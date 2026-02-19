@@ -24,11 +24,18 @@ public class SE01_WarhammerGame {
 		boolean quitGame;
 
 		/* Spielablauf */
+		System.out.print("Player 1, Name: ");
+		nameOfPlayer1 = scanner.next();
+		System.out.println();
+		
+		System.out.print("Player 2, Name: ");
+		nameOfPlayer2 = scanner.next();
+		System.out.println();
 
 		while (true) {
-			System.out.print("Do you want to play another round?: ");
+			System.out.print("Do you want to play another round? (yes or no): ");
 			String answer = scanner.next();
-			if (answer.equals("yes")) {
+			if (answer.equals("yes") || answer.equals("Yes")) {
 				quitGame = false;
 			} else {
 				quitGame = true;
@@ -37,9 +44,6 @@ public class SE01_WarhammerGame {
 				break;
 			}
 			/* Initializing Players */
-			System.out.print("Player 1, Name: ");
-			nameOfPlayer1 = scanner.next();
-			System.out.println();
 
 			System.out.print("Playr 1, Fighter 1: ");
 			nameOfFighter1 = scanner.next();
@@ -47,10 +51,6 @@ public class SE01_WarhammerGame {
 
 			System.out.print("Player 1, Fighter 1, LP: ");
 			healthPointsOfFighter1 = scanner.nextInt();
-			System.out.println();
-
-			System.out.print("Player 2, Name: ");
-			nameOfPlayer2 = scanner.next();
 			System.out.println();
 
 			System.out.print("Player 2, Fighter 2: ");
@@ -83,46 +83,28 @@ public class SE01_WarhammerGame {
 
 	}
 
-	public static int diceRoll() {
-		Random random = new Random();
-		int valueOfDice;
-		valueOfDice = random.nextInt(1, 7);
-		return valueOfDice;
-
-	}
-
-	public static int attackValue(String attacingPlayer) {
-		int totalHits = 0;
-		int valueOfDice;
-
-		for (int i = 0; i <= 4; i++) {
-			valueOfDice = diceRoll();
-			System.out.println("Player " + attacingPlayer + " rollt: " + valueOfDice);
-			totalHits += valueOfDice;
-		}
-
-		return totalHits;
-	}
-
-	public static int defendingValue(String defendingPlayer) {
-		int totalBlocks = 0;
-		int valueOfDice;
-
-		for (int i = 0; i <= 2; i++) {
-			valueOfDice = diceRoll();
-			System.out.println("Player " + defendingPlayer + " rollt: " + valueOfDice);
-			totalBlocks += valueOfDice;
-		}
-		return totalBlocks;
-	}
-
 	public static int valueOfDamage(int healthPointsOfFighter, String attacingPlayer, String defendingPlayer) {
+		Random random = new Random();
 
-		int totalHits = attackValue(attacingPlayer);
+		int[] valueOfDice = new int[7];
+		int totalHits = 0;
+		int totalBlocks = 0;
+
+		for (int i = 0; i <= valueOfDice.length - 1; i++) {
+			valueOfDice[i] = random.nextInt(1, 7);
+		}
+
+		for (int i = 0; i <= 3; i++) {
+			System.out.println("Player " + attacingPlayer + " rollt: " + valueOfDice[i]);
+			totalHits += valueOfDice[i];
+		}
 		System.out.println("TotalHits: " + totalHits);
 		System.out.println();
 
-		int totalBlocks = defendingValue(defendingPlayer);
+		for (int i = 4; i <= valueOfDice.length - 1; i++) {
+			System.out.println("Player " + defendingPlayer + " rollt: " + valueOfDice[i]);
+			totalBlocks += valueOfDice[i];
+		}
 		System.out.println("TotalBlocks: " + totalBlocks);
 		System.out.println();
 
