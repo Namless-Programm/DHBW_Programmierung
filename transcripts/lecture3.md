@@ -32,11 +32,11 @@ flowchart LR
     boolean
 ```
 
-- [D05_TypeCasting](src/main/java/D05_TypeCasting.java)
+- [D05_TypeCasting](src/main/java/main/D05_TypeCasting.java)
 
 ---
 ## Zeichenketten
-- [D06_Strings](src/main/java/D06_Strings.java)
+- [D06_Strings](src/main/java/main/D06_Strings.java)
 
 ---
 
