@@ -15,6 +15,7 @@
 - [Vorlesung 5, 12.02](transcripts/lecture05.md)
 - [Vorlesung 6, 12.02](transcripts/lecture06.md)
 - [Vorlesung 7, 12.02](transcripts/lecture07.md)
+- [Vorlesung 8, 12.02](transcripts/lecture08.md)
 
 
 ##Warhammer Game

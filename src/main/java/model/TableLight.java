@@ -4,9 +4,8 @@ package model;
  * Table Light
  */
 
-public class TableLight {
+public class TableLight extends Light {
 	private boolean isConnected;
-	private boolean isOn;
 	private LightBulb lightBulb;
 	private final PlugType plugType;
 
@@ -32,14 +31,6 @@ public class TableLight {
 		this.isConnected = false;
 	}
 
-	public void switchOn() {
-		this.isOn = true;
-	}
-
-	public void switchOff() {
-		this.isOn = false;
-	}
-
 	public LightBulb changeLightBulb(LightBulb newLightbulb) {
 		LightBulb oldLightBulb = lightBulb;
 		lightBulb = newLightbulb;
@@ -58,10 +49,6 @@ public class TableLight {
 
 	public boolean isConnected() {
 		return isConnected;
-	}
-
-	public boolean isOn() {
-		return isOn;
 	}
 
 	public LightBulb getLightBulb() {

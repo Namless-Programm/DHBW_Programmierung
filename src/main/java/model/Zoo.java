@@ -4,20 +4,18 @@ import java.util.ArrayList;
 
 public class Zoo {
 	
-	private String name;
-	private ArrayList<Animal> animals;
+	private final String name;
+	private final ArrayList<Animal> animals;
 	
-	public void setName(String name) {
+	public Zoo(String name) {
 		this.name = name;
+		animals = new ArrayList<>();
 	}
+		
 	public String getName() {
 		return name;
 	}
-	
-	public void initializeAnimals() {
-		animals = new ArrayList<>();
-	}
-	
+		
 	public void addAnimal(Animal animal) {
 		animals.add(animal);
 	}
@@ -25,6 +23,8 @@ public class Zoo {
 	public ArrayList<Animal> getAnimals(){
 		return animals;
 	}
-	
+	public String toString() {
+		return "Zoo [name= "+ name + ", " + "Animals= "+ animals + "]";
+	}
 
 }
