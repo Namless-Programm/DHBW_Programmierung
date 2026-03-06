@@ -1,6 +1,6 @@
 package model;
 
-public class FlashLight extends Light{
+public final class FlashLight extends Light{
 	
 	private double energyLevel;
 	

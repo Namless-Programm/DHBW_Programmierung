@@ -1,6 +1,6 @@
 package model;
 
-public class Light {
+public abstract class Light {
 	
 	protected boolean isOn;
 	
@@ -10,13 +10,11 @@ public class Light {
 	public void switchOn() {
 		isOn = true;
 	}
-	public void switchOff() {
+	public final void switchOff() {
 		isOn = false;
 	}
 	
-	public boolean isShining() {
-		return isOn;
-	}
+	public abstract boolean isShining();
 	
 	@Override
 	public String toString() {

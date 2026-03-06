@@ -4,7 +4,9 @@ package model;
  * Table Light
  */
 
-public class TableLight extends Light {
+
+
+public final class TableLight extends Light implements WiredDevice {
 	private boolean isConnected;
 	private LightBulb lightBulb;
 	private final PlugType plugType;
@@ -23,10 +25,12 @@ public class TableLight extends Light {
 		numberOfTableLights++;
 	}
 
+	@Override
 	public void plugIn() {
 		this.isConnected = true;
 	}
 
+	@Override
 	public void pullThePlug() {
 		this.isConnected = false;
 	}

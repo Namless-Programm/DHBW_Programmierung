@@ -13,6 +13,7 @@ public class D31_Inheritance {
 		/* Objekterzeugungen */
 
 		TableLight tableLight1 = new TableLight();
+		
 
 		LightBulb redLightBulb = new LightBulb("rot");
 		TableLight tableLight2 = new TableLight(redLightBulb);
