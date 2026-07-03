@@ -1,11 +1,12 @@
 package model;
 
 import java.time.LocalDate;
+import java.util.Objects;
 
-public class Animal {
+public abstract class Animal {
 
 	private final String type;
-	private double weightInKg;
+	protected double weightInKg;
 	private final Color color;
 	private final boolean isCarnivore;
 	private final LocalDate birthdate;
@@ -18,37 +19,54 @@ public class Animal {
 		this.weightInKg = weightInKg;
 	}
 
-	public void eat() {
-		weightInKg *= 1.05;
-	}
+	public abstract void eat();
 
 	public void move() {
 		weightInKg *= 0.098;
 	}
 
-	public String getType() {
+	public final String getType() {
 		return type;
 	}
 
-	public double getWeightInKg() {
+	public final double getWeightInKg() {
 		return weightInKg;
 	}
 
-	public Color getcolor() {
+	public final Color getcolor() {
 		return color;
 	}
 
-	public boolean isCarnivore() {
+	public final boolean isCarnivore() {
 		return isCarnivore;
 	}
 
-	public LocalDate getBirthdate() {
+	public final LocalDate getBirthdate() {
 		return birthdate;
 	}
 	
 	@Override
 	public String toString() {
 		return "Animal [type= " + type + ", color= " + color + ", is Carnivore= "+ isCarnivore + ", birthdate= "+ birthdate + "weightInKg" + "]";
+	}
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(birthdate, color, isCarnivore, type, weightInKg);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Animal other = (Animal) obj;
+		return Objects.equals(birthdate, other.birthdate) && color == other.color && isCarnivore == other.isCarnivore
+				&& Objects.equals(type, other.type)
+				&& Double.doubleToLongBits(weightInKg) == Double.doubleToLongBits(other.weightInKg);
 	}
 
 }

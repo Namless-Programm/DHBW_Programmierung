@@ -2,7 +2,7 @@ package model;
 
 import java.time.LocalDate;
 
-public class LandAnimal extends Animal{
+public final class LandAnimal extends Animal{
 	
 	private final int numberOfLegs;
 
@@ -14,6 +14,11 @@ public class LandAnimal extends Animal{
 	
 	public void run() {
 		System.out.println("run, run");
+	}
+	
+	@Override
+	public void eat() {
+		 weightInKg *= 1.05;	
 	}
 	
 	@Override

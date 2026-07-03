@@ -6,7 +6,7 @@ import java.time.LocalDate;
  * Water Animal
  */
 
-public class WaterAnimal extends Animal{
+public final class WaterAnimal extends Animal{
 	
 	private final boolean isSaltwater;
 
@@ -35,6 +35,12 @@ public class WaterAnimal extends Animal{
 	@Override
 	public String toString() {
 		return "WaterAnimal [type= " + getType() + ", color= " + getcolor() + ", is Carnivore= "+ isCarnivore() + ", birthdate= "+ getBirthdate() + "weightInKg" + "IsSaltwater=" +isSaltwater+ "]";
+	}
+
+	@Override
+	public void eat() {
+		weightInKg *= 1.02;
+		
 	}
 	
 	

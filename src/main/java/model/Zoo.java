@@ -1,15 +1,16 @@
 package model;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Zoo {
 	
 	private final String name;
-	private final ArrayList<Animal> animals;
+	private final List<Animal> animals;
 	
 	public Zoo(String name) {
 		this.name = name;
-		animals = new ArrayList<>();
+		animals = new ArrayList<>(); // Upcast
 	}
 		
 	public String getName() {
@@ -20,8 +21,8 @@ public class Zoo {
 		animals.add(animal);
 	}
 	
-	public ArrayList<Animal> getAnimals(){
-		return animals;
+	public List<Animal> getAnimals(){
+		return animals; 
 	}
 	public String toString() {
 		return "Zoo [name= "+ name + ", " + "Animals= "+ animals + "]";
