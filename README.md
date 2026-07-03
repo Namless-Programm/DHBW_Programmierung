@@ -2,21 +2,21 @@
 
 ## Quellcode
 
-- [Startklassen](src/main/java/introduction_programming/main)
-- [Entitätsklassen](src/main/java/introduction_programming/model)
-- [Hilfsklassen](src/main/java/introduction_programming/utility)
+- [Startklassen](src/main/java/main)
+- [Entitätsklassen](src/main/java/model)
+- [Hilfsklassen](src/main/java/utility)
 
 ## Mitschriebe
 
-- [Vorlesung 1, 27.01](transcripts/Einfuerung_Programmierung/lecture01.md)
-- [Vorlesung 2, 03.02](transcripts/Einfuerung_Programmierung/lecture02.md)
-- [Vorlesung 3, 05.02](transcripts/Einfuerung_Programmierung/lecture03.md)
-- [Vorlesung 4, 10.02](transcripts/Einfuerung_Programmierung/lecture04.md)
-- [Vorlesung 5, 12.02](transcripts/Einfuerung_Programmierung/lecture05.md)
-- [Vorlesung 6, 12.02](transcripts/Einfuerung_Programmierung/lecture06.md)
-- [Vorlesung 7, 12.02](transcripts/Einfuerung_Programmierung/lecture07.md)
-- [Vorlesung 8, 12.02](transcripts/Einfuerung_Programmierung/lecture08.md)
-- [Vorlesung 9, 12.02](transcripts/Einfuerung_Programmierung/lecture09.md)
+- [Vorlesung 1, 27.01](transcripts/lecture01.md)
+- [Vorlesung 2, 03.02](transcripts/lecture02.md)
+- [Vorlesung 3, 05.02](transcripts/lecture03.md)
+- [Vorlesung 4, 10.02](transcripts/lecture04.md)
+- [Vorlesung 5, 12.02](transcripts/lecture05.md)
+- [Vorlesung 6, 12.02](transcripts/lecture06.md)
+- [Vorlesung 7, 12.02](transcripts/lecture07.md)
+- [Vorlesung 8, 12.02](transcripts/lecture08.md)
+- [Vorlesung 9, 12.02](transcripts/lecture09.md)
 
 
 ##Warhammer Game
