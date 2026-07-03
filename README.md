@@ -2,9 +2,9 @@
 
 ## Quellcode
 
-- [Startklassen](src/main/java/main)
-- [Entitätsklassen](src/main/java/model)
-- [Hilfsklassen](src/main/java/utility)
+- [Startklassen](src/main/java/introduction_programming/main)
+- [Entitätsklassen](src/main/java/introduction_programming/model)
+- [Hilfsklassen](src/main/java/introduction_programming/utility)
 
 ## Mitschriebe
 
