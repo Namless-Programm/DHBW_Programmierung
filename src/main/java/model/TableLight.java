@@ -26,7 +26,10 @@ public final class TableLight extends Light implements WiredDevice {
 	}
 
 	@Override
-	public void plugIn() {
+	public void plugIn() throws AlreadyPlugedInExeption {
+		if(isConnected) {
+			throw new AlreadyPlugedInExeption();
+		}
 		this.isConnected = true;
 	}
 

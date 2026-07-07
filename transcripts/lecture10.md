@@ -1,4 +1,4 @@
-#Vorlesung 2, 03.07
+#Vorlesung 1, 03.07
 
 - Themen für Klassenarbeit besprochen
 - Klausurbesprechung

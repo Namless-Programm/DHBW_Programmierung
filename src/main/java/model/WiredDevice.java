@@ -6,7 +6,7 @@ package model;
 
 public interface WiredDevice {
 	
-	void plugIn();
+	void plugIn() throws AlreadyPlugedInExeption;
 	void pullThePlug();
 
 }

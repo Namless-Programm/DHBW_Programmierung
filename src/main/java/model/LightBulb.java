@@ -1,8 +1,11 @@
 package model;
 
+import lombok.Data;
+
 /**
  * Light Bulb
  */
+@Data
 
 public class LightBulb {
 	

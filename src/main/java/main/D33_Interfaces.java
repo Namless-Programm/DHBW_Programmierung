@@ -1,6 +1,7 @@
 package main;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import model.FlashLight;
 import model.Light;
@@ -22,7 +23,7 @@ public class D33_Interfaces {
 		Toaster toaster1 = new Toaster();
 		Toaster toaster2 = new Toaster();
 		
-		ArrayList<WiredDevice> wiredDevices = new ArrayList<>();
+		List<WiredDevice> wiredDevices = new ArrayList<>();
 		
 		wiredDevices.add(toaster1); // Upcast
 		wiredDevices.add(light1);// Upcast
